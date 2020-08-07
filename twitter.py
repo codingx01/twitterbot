@@ -19,7 +19,7 @@ def main(event, context):
                 #tweet.retweet()
                 time.sleep(5)
                 
-    #For Follow to the Followers            
+    #For Followback to the Followers            
     '''for follower in tweepy.Cursor(api.followers).items(1):
      if not follower.following:
         if follower.friends_count > 500:
