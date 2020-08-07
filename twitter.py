@@ -18,6 +18,12 @@ def main(event, context):
                 tweet.favorite()
                 #tweet.retweet()
                 time.sleep(5)
+                
+    #For Follow to the Followers            
+    '''for follower in tweepy.Cursor(api.followers).items(1):
+     if not follower.following:
+        if follower.friends_count > 500:
+            follower.follow()'''
 
             except Exception as e:
                 print(e.reason)
